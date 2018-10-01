@@ -4,6 +4,6 @@
        http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
 	bean-discovery-mode="all">
 	<interceptors>
-		<class>projeto.dawii.lucas.util.TransacionalInterceptor</class>
+		<class>projeto.lucas.disciplina.util.TransacionalInterceptor</class>
 	</interceptors>
 </beans>
