@@ -1,11 +1,16 @@
 package projeto.lucas.disciplina.entities;
 
-import java.awt.List;
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
 public class Usuario implements Identificavel {
 	private String nome;
 	private Set<Disciplina> disciplinas;
+	@Id
 	private Long id;
 
 	public Usuario() {

@@ -1,13 +1,18 @@
 package projeto.lucas.disciplina.entities;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+import projeto.lucas.disciplina.entities.Usuario;
 
+@Entity
 public class Disciplina implements Identificavel{
 	private String nome;
+	@Id
 	private Long id;
 	private String descricao;
+	@ManyToOne
 	private Usuario professor;
 	public Disciplina() {
 		super();
