@@ -12,6 +12,9 @@ public class Usuario implements Identificavel {
 	private Set<Disciplina> disciplinas;
 	@Id
 	private Long id;
+	private String username;
+	private String password;
+	private String grupo;
 
 	public Usuario() {
 		super();
@@ -40,6 +43,30 @@ public class Usuario implements Identificavel {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getGrupo() {
+		return grupo;
+	}
+
+	public void setGrupo(String grupo) {
+		this.grupo = grupo;
 	}
 
 }
